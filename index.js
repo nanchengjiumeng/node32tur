@@ -1,6 +1,4 @@
 const child_process = require("child_process");
-const winax = require("./winax/activex");
-const memoryjs = require("./memoryjs");
 
 const fork = (path, args, opts) => {
   return child_process.fork(path, args, {
@@ -10,7 +8,5 @@ const fork = (path, args, opts) => {
 };
 
 module.exports = {
-  winax,
   fork,
-  memoryjs,
 };
