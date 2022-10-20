@@ -1,5 +1,5 @@
 const child_process = require("child_process");
-const winax = require("./activex");
+const winax = require("./winax/activex");
 const memoryjs = require("./memoryjs");
 
 const fork = (path, args, opts) => {
