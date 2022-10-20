@@ -1,8 +1,9 @@
 const child_process = require("child_process");
+const path = require("path");
 
-const fork = (path, args, opts) => {
-  return child_process.fork(path, args, {
-    execPath: "./node16170bit32/node.exe",
+const fork = (fpath, args, opts) => {
+  return child_process.fork(fpath, args, {
+    execPath: path.join(__dirname, "./node16170bit32/node.exe"),
     ...opts,
   });
 };

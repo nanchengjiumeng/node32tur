@@ -1,1 +1,1 @@
-module.exports = require("./winax/activex");
+module.exports = require("./activex");
